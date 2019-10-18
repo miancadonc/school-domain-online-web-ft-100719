@@ -16,8 +16,7 @@ class School
   end
   
   def sort
-    self.roster.values.collect!{|grade|grade.sort!}
-    self.roster
+    self.roster.values.collect{|grade|grade.sort!}
   end
   
 end
